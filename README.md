@@ -1,37 +1,40 @@
-## Welcome to GitHub Pages
+## 南帆
+## 效果预览
 
-You can use the [editor on GitHub](https://github.com/gplcn/GL.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+**[在线预览 &rarr;](https://www.gplvip.com)**
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Fork 指南
 
-### Markdown
+Fork 本项目之后，还需要做一些事情才能让你的页面「正确」跑起来。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1. 正确设置项目名称与分支。
 
-```markdown
-Syntax highlighted code block
+   按照 GitHub Pages 的规定，名称为 `username.github.io` 的项目的 master 分支，或者其它名称的项目的 gh-pages 分支可以自动生成 GitHub Pages 页面。
 
-# Header 1
-## Header 2
-### Header 3
+2. 修改域名。
 
-- Bulleted
-- List
+   如果你需要绑定自己的域名，那么修改 CNAME 文件的内容；如果不需要绑定自己的域名，那么删掉 CNAME 文件。
 
-1. Numbered
-2. List
+3. 修改配置。
 
-**Bold** and _Italic_ and `Code` text
+   网站的配置基本都集中在 \_config.yml 文件中，将其中与个人信息相关的部分替换成你自己的，比如网站的 url、title、subtitle 和第三方评论模块的配置等。
 
-[Link](url) and ![Image](src)
-```
+   **评论模块：** 目前支持 disqus、gitment 和 gitalk，选用其中一种就可以了，推荐使用 gitalk。它们各自的配置指南链接在 \_config.yml 文件的 Comments 一节里都贴出来了。
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+   **注意：** 如果使用 disqus，因为 disqus 处理用户名与域名白名单的策略存在缺陷，请一定将 disqus.username 修改成你自己的，否则请将该字段留空。我对该缺陷的记录见 [Issues#2][3]。
 
-### Jekyll Themes
+4. 删除我的文章与图片。
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/gplcn/GL.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+   如下文件夹中除了 template.md 文件外，都可以全部删除，然后添加你自己的内容。
 
-### Support or Contact
+   * \_posts 文件夹中是我已发布的博客文章。
+   * \_drafts 文件夹中是我尚未发布的博客文章。
+   * \_wiki 文件夹中是我已发布的 wiki 页面。
+   * images 文件夹中是我的文章和页面里使用的图片。
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+5. 修改「关于」页面。
+
+   pages/about.md 文件内容对应网站的「关于」页面，里面的内容多为个人相关，将它们替换成你自己的信息，包括 \_data 目录下的 skills.yml 和 social.yml 文件里的数据。
+## 致谢
+
+本博客外观基于 [DONGChuan](https://mazhuang.org) 修改，感谢！
