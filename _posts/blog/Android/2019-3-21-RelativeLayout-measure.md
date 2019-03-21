@@ -1,3 +1,13 @@
+---
+
+layout: post
+title: Android RelativeLayout#onMeasure 源码解析
+categories: Android
+description: 解析RelativeLayout#onMeasure过程
+keywords: RelativeLayout, Android,View
+
+---
+
 # android.widget.RelativeLayout#onMeasure 源码解析
 
 ##  View的测量过程：
