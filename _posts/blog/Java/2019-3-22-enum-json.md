@@ -2,7 +2,7 @@
 
 layout: post
 title: enum在json中的序列化与反序列化
-categories: Java,Json
+categories: Java
 description: 枚举的序列化与反序列化实现
 keywords: Json, enum
 
