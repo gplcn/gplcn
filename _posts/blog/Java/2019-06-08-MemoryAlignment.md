@@ -12,26 +12,26 @@ memory alignment：为了提高程序的性能，数据结构（尤其是栈）�
 ## 内存存取粒度
 
 通常倾向于认为内存就像一个字节数组，对内存的存取也是按照单个字节块处理。
-<img src="https://github.com/gplcn/gplcn.github.io/blob/develop/images/posts/memory_alignment/m_a_01.png?raw=true"  height="300" width="270">
+<img src="https://github.com/gplcn/gplcn.github.io/blob/master/images/posts/memory_alignment/m_a_01.png?raw=true"  height="300" width="270">
 
 
 实际上处理器并不是按字节块来存取内存的，它一般会以双字节、4字节、8字节、16字节甚至32字节为单位来存取内存，我们将上述这些存取单位称为内存存取粒度。
-<img src="https://github.com/gplcn/gplcn.github.io/blob/develop/images/posts/memory_alignment/m_a_02.png?raw=true"  height="330" width="290">
+<img src="https://github.com/gplcn/gplcn.github.io/blob/master/images/posts/memory_alignment/m_a_02.png?raw=true"  height="330" width="290">
 
 ## 内存存取粒度对存取的影响
 内存存取粒度是如何对该任务产生影响的.这个任务很简单:先从地址0读取4个字节到寄存器,然后从地址1读取4个字节到寄存器.
 
 ### 存取粒度为1byte的情况
 <div align="left">
-<img src="https://github.com/gplcn/gplcn.github.io/blob/develop/images/posts/memory_alignment/m_a_07.png?raw=true"  height="250" width="290">
-<img src="https://github.com/gplcn/gplcn.github.io/blob/develop/images/posts/memory_alignment/m_a_08.png?raw=true"  height="250" width="290">
+<img src="https://github.com/gplcn/gplcn.github.io/blob/master/images/posts/memory_alignment/m_a_07.png?raw=true"  height="250" width="290">
+<img src="https://github.com/gplcn/gplcn.github.io/blob/master/images/posts/memory_alignment/m_a_08.png?raw=true"  height="250" width="290">
 </div>
 
 * 从地址0和地址1读取4字节数据都需要相同的4次操作。
 ### 存取粒度为2byte的情况
 <div align="left">
-<img src="https://github.com/gplcn/gplcn.github.io/blob/develop/images/posts/memory_alignment/m_a_03.png?raw=true"  height="250" width="290">
-<img src="https://github.com/gplcn/gplcn.github.io/blob/develop/images/posts/memory_alignment/m_a_06.png?raw=true"  height="250" width="290">
+<img src="https://github.com/gplcn/gplcn.github.io/blob/master/images/posts/memory_alignment/m_a_03.png?raw=true"  height="250" width="290">
+<img src="https://github.com/gplcn/gplcn.github.io/blob/master/images/posts/memory_alignment/m_a_06.png?raw=true"  height="250" width="290">
 </div>
 
 * 从地址0读取数据，双字节存取粒度的处理器读内存的次数是单字节存取粒度处理器的一半.因为每次内存存取都会产生一个固定的开销,最小化内存存取次数将提升程序的性能。
@@ -39,8 +39,8 @@ memory alignment：为了提高程序的性能，数据结构（尤其是栈）�
 
 ### 存取粒度为4byte的情况
 <div align="left">
-<img src="https://github.com/gplcn/gplcn.github.io/blob/develop/images/posts/memory_alignment/m_a_04.png?raw=true"  height="250" width="290">
-<img src="https://github.com/gplcn/gplcn.github.io/blob/develop/images/posts/memory_alignment/m_a_05.png?raw=true"  height="250" width="290">
+<img src="https://github.com/gplcn/gplcn.github.io/blob/master/images/posts/memory_alignment/m_a_04.png?raw=true"  height="250" width="290">
+<img src="https://github.com/gplcn/gplcn.github.io/blob/master/images/posts/memory_alignment/m_a_05.png?raw=true"  height="250" width="290">
 </div>
 
 * 4字节存取粒度处理器可以一次性的将4个字节全部读出;而在非对齐的内存地址上,读取次数将加倍.
