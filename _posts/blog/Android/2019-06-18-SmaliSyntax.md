@@ -6,7 +6,7 @@ description: smali 语法指令
 keywords: smali
 ---
 
-# smali语法
+# ***smali***语法 ***1***
 
 	    表中的vx、vy、vz表示某个Dalvik寄存器。根据不同指令可以访问16、256或64K寄存器。
 	
