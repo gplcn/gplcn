@@ -19,16 +19,16 @@ Dalvik字节码有两种类型：原始类型；引用类型（包括对象和�
 
 ##### 原始类型
 			
-		   v  		| void  只能用于返回值类型
-		   :---	|:---
-          Z   	|boolean
-          B   	|byte
-          S   	|short
-          C   	|char
-          I    	|int
-          J    	|long（64位）
-          F   	|float
-          D   	|double（64位）  
+|v  	|void  只能用于返回值类型|
+|:----	|:-----------	|
+|Z   	|boolean		|
+|B   	|byte			|
+|S   	|short			|
+|C   	|char			|
+|I    	|int			|
+| J   	|long（64位）	|
+| F   	|float			|
+| D   	|double（64位）| 
 ##### 对象类型
 
 	Lpackage/name/ObjectName; ———— 相当于java中的package.name.ObjectName;
@@ -1164,12 +1164,12 @@ v4		|p2		|the third parameter register
 	* 正如前面提到的，long和double类型都是64位，需要2个寄存器。当你引用参数的时候一定要记住，例如：你有一个非静态方法LMyObject;->MyMethod(IJZ)V,LMyObject方法的参数为int、long、bool。所以这个方法的所有参数需要5个寄存器。
 
 
-			p0		|this
-			:---	|:---	
-			p1		|I
-			p2, p3	|J
-			p4		|Z
-
+		|p0			|this	|
+		|:------	|:----	|	
+		|p1			|I	 	|
+		|p2, p3	|J		|
+		|p4			|Z		|	
+	
 另外当你调用方法后，你必须在寄存器列表，调用指令中指明，两个寄存器保存了double-wide宽度的参数。
 
 ### 关于几个调用方法指令： invoke-virtual、invoke-direct、invoke-super介绍。
