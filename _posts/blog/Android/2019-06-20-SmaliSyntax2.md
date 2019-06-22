@@ -18,17 +18,20 @@ Davlik字节码中，寄存器都是32位的，能够支持任何类型，64位�
 Dalvik字节码有两种类型：原始类型；引用类型（包括对象和数组）
 
 ##### 原始类型
+
 			
-|v  	|void 只能用于返回值类型	|
+| v  	| void 只能用于返回值类型	|
 |:----	|:--------------------	|
-|Z   	|boolean					|
-|B   	|byte						|
-|S   	|short						|
-|C   	|char						|
-|I    	|int						|
-|J   	|long（64位）				|
-|F   	|float						|
-|D   	|double（64位）			|
+| Z   	| boolean					|
+| B   	| byte						|
+| S   	| short					|
+| C   	| char						|
+| I   	| int						|
+| J   	| long（64位）				|
+| F   	| float					|
+| D   	| double（64位）			|
+ 
+ 
  
 ##### 对象类型
 
