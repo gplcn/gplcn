@@ -28,7 +28,8 @@ Dalvik字节码有两种类型：原始类型；引用类型（包括对象和�
 |I    	|int						|
 |J   	|long（64位）				|
 |F   	|float						|
-|D   	|double（64位）			| 
+|D   	|double（64位）			|
+ 
 ##### 对象类型
 
 	Lpackage/name/ObjectName; ———— 相当于java中的package.name.ObjectName;
