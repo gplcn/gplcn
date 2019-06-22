@@ -1,6 +1,6 @@
 ---
 layout: post
-title: smali语法
+title: smali语法1
 categories: [Android]
 description: smali 语法指令
 keywords: smali

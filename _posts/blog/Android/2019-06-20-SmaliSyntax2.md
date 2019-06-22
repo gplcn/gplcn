@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android逆向分析之smali语法
+title: smali语法2
 categories: [Android]
 description: Android逆向分析
 keywords: smali
