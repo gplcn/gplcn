@@ -19,16 +19,16 @@ Dalvik字节码有两种类型：原始类型；引用类型（包括对象和�
 
 ##### 原始类型
 			
-|v  	|void  只能用于返回值类型|
-|:----	|:-----------	|
-|Z   	|boolean		|
-|B   	|byte			|
-|S   	|short			|
-|C   	|char			|
-|I    	|int			|
-| J   	|long（64位）	|
-| F   	|float			|
-| D   	|double（64位）| 
+|v  	|void 只能用于返回值类型	|
+|:----	|:--------------------	|
+|Z   	|boolean					|
+|B   	|byte						|
+|S   	|short						|
+|C   	|char						|
+|I    	|int						|
+|J   	|long（64位）				|
+|F   	|float						|
+|D   	|double（64位）			| 
 ##### 对象类型
 
 	Lpackage/name/ObjectName; ———— 相当于java中的package.name.ObjectName;
