@@ -8,19 +8,23 @@ keywords: smali
 
 # ***smali***语法 ***1***
 
+***
 
-	    表中的vx、vy、vz表示某个Dalvik寄存器。根据不同指令可以访问16、256或64K寄存器。
+```
+	表中的vx、vy、vz表示某个Dalvik寄存器。根据不同指令可以访问16、256或64K寄存器。
 	
-	表中lit4、lit8、lit16、lit32、lit64表示字面值（直接赋值），数字是值所占用位的长度。
+表中lit4、lit8、lit16、lit32、lit64表示字面值（直接赋值），数字是值所占用位的长度。
 	
-	long和double型的值占用两个寄存器，例：一个在v0寄存器的double值实际占用v0,v1两个寄存器。
+long和double型的值占用两个寄存器，例：一个在v0寄存器的double值实际占用v0,v1两个寄存器。
 	
-	boolean值的存储实际是1和0，1为真、0为假；boolean型的值实际是转成int型的值进行操作。
+boolean值的存储实际是1和0，1为真、0为假；boolean型的值实际是转成int型的值进行操作。
 	
-	所有例子的字节序都采用高位存储格式，例：0F00 0A00的编译为0F, 00, 0A, 00 存储。
+所有例子的字节序都采用高位存储格式，例：0F00 0A00的编译为0F, 00, 0A, 00 存储。
 
+```
+[Dalvik 字节码][]
+[Dalvik 字节码]:https://source.android.google.cn/devices/tech/dalvik/dalvik-bytecode
 
-[Dalvik 字节码](https://source.android.google.cn/devices/tech/dalvik/dalvik-bytecode)
 
 <table style="width: 100%;" border="1" cellspacing="0" cellpadding="0">
 <tbody>
